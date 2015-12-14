@@ -1,0 +1,22 @@
+{
+  "name": "jwt-generator",
+  "version": "0.1.0",
+  "description": "A JWT tokens generator built on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jwt",
+    "generator",
+    "security",
+    "bearer",
+    "token"
+  ],
+  "author": "xelita",
+  "license": "ISC",
+  "dependencies": {
+    "njwt": "^0.2.3",
+    "node-uuid": "^1.4.7"
+  }
+}
