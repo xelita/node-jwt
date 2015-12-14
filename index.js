@@ -13,7 +13,9 @@ var claims = {
 }
 
 // Token generation
-var token = nJwt.create(claims, signingKey).compact();
+var token = nJwt.create(claims, signingKey);
+token.setExpiration(new Date().getTime() + (60 * 60 * 1000));
+token = token.compact()
 console.log('JWT: ' + token)
 
 // Token verification
